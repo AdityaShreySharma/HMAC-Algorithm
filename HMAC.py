@@ -36,9 +36,12 @@ class HMAC:
 
         # Returns True, if digestmod is a String, otherwise False
         elif isinstance(digestmod, str):
-            # hashlib.new() takes in two arguments 
-            # 1) String Name of the Hashing Algorithm
-            # 2) Data to be hashed
+            """
+            hashlib.new() takes in two arguments 
+            1) String Name of the Hashing Algorithm
+            2) Data to be hashed
+            
+            """
             self.messageDigest = lambda d=b'': hashlib.new(digestmod, d)
         
         # If digestmod is not a String
