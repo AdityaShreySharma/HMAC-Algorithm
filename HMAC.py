@@ -15,9 +15,9 @@ def base64encode(s):
 # ipad = 00110110 taken b/8 bits in length
 # opad = 01011100 taken b/8 bits in length
 ipad = 0x36
-inputSignature = bytes((K ^ ipad) for K in range(256))
+inputSignature = bytes((Key ^ ipad) for Key in range(256))
 opad = 0x5C
-outputSignature = bytes((K ^ opad) for K in range(256))
+outputSignature = bytes((Key ^ opad) for Key in range(256))
 
 class HMAC:
     # Block Size is specified as 64
