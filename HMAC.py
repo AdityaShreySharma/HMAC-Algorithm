@@ -11,22 +11,29 @@ def base64encode(s):
     return encoded
 
 # Generation of Input and Output Signatures respectively
-# K = Padded with zeros on the left so that the result is b bits in length
-# ipad = 00110110 taken b/8 bits in length
-# opad = 01011100 taken b/8 bits in length
+"""
+Key = Padded with zeros on the left so that the result becomes 'b' bits in length
+ipad = 00110110 (36 in Hexadecimal) repeated b/8 times
+opad = 01011100 (5C in Hexadecimal) repeated b/8 times
+
+"""
+# bytes() converts an object to an immutable byte-represented object of the given size and data
 ipad = 0x36
 inputSignature = bytes((Key ^ ipad) for Key in range(256))
 opad = 0x5C
 outputSignature = bytes((Key ^ opad) for Key in range(256))
 
 class HMAC:
-    # Block Size is specified as 64
-    blocksize = 64 
+    # Block Size of the Message is specified as 64 bits
+    blocksize = 64
 
     # Constructor to initialize the attributes(key, message, digestmod) of the class
-    # key = Secret
-    # msg = Message to be encoded
-    # digestmod = Hashing Algorithm 
+    """
+    key = Secret Key shared between the Sender and the Receiver
+    msg = Message to be encoded
+    digestmod = Hashing Algorithm 
+    
+    """
     # self represents the instance of the class
     def __init__(self, key, msg=None, digestmod=''):
 
