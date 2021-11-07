@@ -135,5 +135,8 @@ key = bytes(keyInput, 'utf-8')
 # digest() returns the encoded data in byte format
 signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 
+# Decoding the bytes object
+HMAC = signature.decode("utf-8")
+
 # Displaying the HMAC Signature
 print("HMAC Signature = ", signature)
