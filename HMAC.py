@@ -60,10 +60,6 @@ class HMAC:
         self.input = self.messageDigest()
         self.output = self.messageDigest()
 
-        # 'digest_size' is the length or size (in bytes) of the data once it is hashed
-        # Assigning 'digest_size' to the size of the input
-        self.digest_size = self.input.digest_size
-
         # hasattr() returns True if the specified object has the specified attribute, otherwise False
         # 'block_size' is the internal block size of the hash algorithm in bytes
         if hasattr(self.input, 'block_size'):
