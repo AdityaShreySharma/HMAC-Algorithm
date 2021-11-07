@@ -139,4 +139,4 @@ signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 HMAC = signature.decode("utf-8")
 
 # Displaying the HMAC Signature
-print("HMAC Signature = ", signature)
+print("HMAC Signature =", HMAC)
