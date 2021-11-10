@@ -10,5 +10,10 @@ For example - hashlib.sha512, hashlib.sha1 etc.
 signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 ```
 
-Output with SHA256 as the Hash Algorithm :-
-![SHA-256!](../Digital Assignments\Fall Semester (2021-2022)\ISAA (Project)\Screenshots\SHA256.png)
+Output with SHA-256 as the Hash Algorithm :-
+
+![SHA256](https://user-images.githubusercontent.com/65895246/141085311-a6cfda87-b773-418b-a37f-1325789309a4.PNG)
+
+Output with SHA-512 as the Hash Algorithm :-
+
+![SHA512](https://user-images.githubusercontent.com/65895246/141085397-23ae0b97-1bd8-4093-aee9-2883487e63f2.PNG)
