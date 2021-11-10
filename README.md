@@ -9,3 +9,6 @@ For example - hashlib.sha512, hashlib.sha1 etc.
 # digest() returns the encoded data in byte format
 signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 ```
+
+Output with SHA256 as the Hash Algorithm :-
+![SHA256](../Digital Assignments\Fall Semester (2021-2022)\ISAA (Project)\Screenshots\SHA256.png)
