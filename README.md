@@ -11,4 +11,4 @@ signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 ```
 
 Output with SHA256 as the Hash Algorithm :-
-![SHA256](../Digital Assignments\Fall Semester (2021-2022)\ISAA (Project)\Screenshots\SHA256.png)
+![SHA-256!](../Digital Assignments\Fall Semester (2021-2022)\ISAA (Project)\Screenshots\SHA256.png)
