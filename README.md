@@ -12,9 +12,11 @@ signature = base64encode(hmacGenerator(key, message, hashlib.sha256).digest())
 For example - hashlib.sha512, hashlib.sha1 etc.
 
 
+
 Output with SHA-256 as the Hash Algorithm :-
 
 ![SHA256](https://user-images.githubusercontent.com/65895246/141085311-a6cfda87-b773-418b-a37f-1325789309a4.PNG)
+
 
 Output with SHA-512 as the Hash Algorithm :-
 
