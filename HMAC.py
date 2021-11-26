@@ -1,7 +1,7 @@
 # Importing the 'hashlib' library to use the Hashing Algorithm to hash the Key 
 import hashlib
 
-# Importing the 'binascii' library to to encode the HMAC Signature 
+# Importing the 'binascii' library to encode the HMAC Signature 
 import binascii
 
 # Function to encode the HMAC Signature
